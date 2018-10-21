@@ -12,6 +12,24 @@
 
     <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
 
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+    
+    <style>
+      body {
+        margin: 0;
+        background-color: black;
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(50, 50, 50) 50%, rgb(0, 0, 0) 100%);
+        background-attachment: fixed;
+        font-family: 'Roboto', 'Noto', sans-serif;
+      }
+    </style>
+
     <link rel="import" href="/src/show-app/show-app.html">
   </head>
   <body>
