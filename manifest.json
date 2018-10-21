@@ -1,0 +1,7 @@
+{
+  "name": "My First PWA",
+  "short_name": "My First PWA",
+  "description": "my first pwa using polymer",
+  "start_url": "/",
+  "display": "standalone"
+}
